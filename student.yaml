@@ -1,0 +1,42 @@
+- name: "Praveena Palla"
+  dob: "01-01-2000"
+  age: 21
+  adresses:
+  -doorNo: 2-34
+  street: "NavodsayaNagar"
+  city: "Narasaraopet"
+  pin: 522601
+  type: current
+
+  -doorNo: 2-34
+  street: "Nagar"
+  city: "Guntur"
+  pin: 522602
+  type: permanent
+  skills:
+  - java
+  - devops
+  - cloud
+
+- name: "Priya Palla"
+  dob: "01-01-1999"
+  age: 24
+  adresses:
+  -doorNo: 1-34
+  street: "anathapur"
+  city: "Hyderbad"
+  pin: 522603
+  type: current
+
+  -doorNo: 2-34
+  street: "ramiredyypet"
+  city: "Cpt"
+  pin: 522604
+  type: permanent
+  skills:
+  - java
+  - Angular
+  - cloud
+
+
+  
