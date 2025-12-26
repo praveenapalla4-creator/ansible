@@ -1,10 +1,10 @@
-- name: install ocakages
+- name: install packages
   hosts: local
   connection: local
   become: yes
   tasks:
   - name: print names
-    ansible.builtin.pacakage:
+    ansible.builtin.package:
       name: "{{ item }}"
       state: latest
     loop:
