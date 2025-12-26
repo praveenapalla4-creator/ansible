@@ -11,12 +11,15 @@
   - course.yaml
   # prompt variables
   vars_prompt:
-  - name: username
-    prompt: what is your username?
+  - name: COURSE
+    prompt: what is your COURSE?
     private: false
-  - name: password
-    prompt: what is your password?
-    private: true
+  - name: DURATION
+    prompt: what is your DURATION?
+    private: false
+  - name: TRAINER
+    prompt: what is your TRAINER?
+    private: false
   tasks:
   - name: print the cousre info
     #task level variables
@@ -25,4 +28,5 @@
     ansible.builtin.debug:  
       msg: "Course Name is: {{ COURSE }}, DUration: {{ DURATION }}, Trainer: {{ TRAINER}}"
 
-#
+# 1 prefrence command or args line
+#1
