@@ -1,6 +1,7 @@
 - name: check the fcats
   hosts: local
   connection: local 
+  become: yes
   tasks:
   - name: install bgins if RedHat
     ansible.builtin.dnf:
