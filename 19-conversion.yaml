@@ -90,3 +90,21 @@
   - name: print the redirect_output
     ansible.builtin.debug:
       msg: "{{ redirect_output }}"
+
+
+# ## error Handling
+#  2 types
+#  1. we can handle
+#  2. we cannot handle
+#  general ga error vasthe  proceed avvadhu (shell lo avuthundhi)
+#  ansible lo kuda error vasthe proceed avvadhu 
+#  error vachina proceed avvali ante we need to set ignore_errors: true
+
+## redirections
+  - name: redirect the command_output
+    ansible.builtin.command: ls -ltr > /tmp/output.txt
+    register: redirect_output
+    ignore_errors: true
+  - name: print the redirect_output
+    ansible.builtin.debug:
+      msg: "{{ redirect_output }}"
