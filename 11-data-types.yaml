@@ -17,3 +17,7 @@
   - name: print the coude info
     ansible.builtin.debug:
       msg: "Course name: {{ course}}, Duration is{{ Duration }}, is_alive:{{ is_live }}, tools are {{ tools }}, concepts are {{ concepts }}"
+
+
+#list[]
+#map{}
