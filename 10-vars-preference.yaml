@@ -2,29 +2,29 @@
   hosts: local
   connection: local 
   # play level varaibles
-  # vars:
-  #   COURSE: DevOps
-  #   DURATION: 1hrs
-  #   TRAINER: Siva
+  vars:
+    COURSE: DevOps
+    DURATION: 1hrs
+    TRAINER: Siva
   # var files variables
-  # vars_files:
-  # - course.yaml
+  vars_files:
+  - course.yaml
   # prompt variables
-  # vars_prompt:
-  # - name: COURSE
-  #   prompt: what is your COURSE?
-  #   private: false
-  # - name: DURATION
-  #   prompt: what is your DURATION?
-  #   private: false
-  # - name: TRAINER
-  #   prompt: what is your TRAINER?
-  #   private: false
+  vars_prompt:
+  - name: COURSE
+    prompt: what is your COURSE?
+    private: false
+  - name: DURATION
+    prompt: what is your DURATION?
+    private: false
+  - name: TRAINER
+    prompt: what is your TRAINER?
+    private: false
   tasks:
   - name: print the cousre info
     #task level variables
-    # vars:
-    #   COURSE: Shell-Script
+    vars:
+      COURSE: Shell-Script
     ansible.builtin.debug:  
       msg: "Course Name is: {{ COURSE }}, DUration: {{ DURATION }}, Trainer: {{ TRAINER}}"
 
@@ -33,3 +33,4 @@
 # 3 var-files
 # 4 prompt vars
 # 5 play level
+# 6 inventory vars
