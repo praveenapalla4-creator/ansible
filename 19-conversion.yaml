@@ -13,7 +13,7 @@
       value: consultant
     name: praveena Palla
     gmail: Info@gmail.com
-    Ipadress: 353.654.725.926 # max ipadress 255.255.255.255
+    Ipadress: 192.168.1.0 # max ipadress 255.255.255.255
 
        
   tasks:
@@ -42,7 +42,7 @@
       content: "{{ student_yaml | to_nice_json}}"
   - name: convert to upper case
     ansible.builtin.debug:
-      msg: "{{name | upper}}"
+      msg: "{{email | upper}}"
   - name: convert to lower case
     ansible.builtin.debug:
       msg: "{{name | lower}}"
