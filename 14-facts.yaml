@@ -1,0 +1,15 @@
+- name: check the fcats
+  hosts: local
+  connection: local 
+  tasks:
+  - name: install bgins if RedHat
+    ansible.builtin.dnf:
+      name: nginx
+      state: latest
+    when: ansible_os_family == "RedHat" # use ansible wheile referering the facts
+  
+  - name: install bgins if RedHat
+    ansible.builtin.apt:
+      name: nginx
+      state: latest
+    when: ansible_os_family == "Debian" 
