@@ -6,12 +6,22 @@
     tags:
       application: payment
       env: dev
+    listdepart:
+    - key: senior
+      value: Analayst
+    - key: Associate
+      value: consultant
+
        
   tasks:
   - name: converting string to list
     ansible.builtin.debug:
      msg: "Technologies are : {{technologies | split(',') }}"
-  - name: converting map to list
+  - name: converting map to lsist
     ansible.builtin.debug:
       msg: "tages are: {{tags | dict2items}}"
+  
+  - name: converting lsit to map
+    ansible.builtin.debug:
+      msg: "tages are: {{ lsitdepart | items2dict }}"
 
