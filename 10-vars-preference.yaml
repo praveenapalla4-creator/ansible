@@ -7,8 +7,8 @@
     DURATION: 1hrs
     TRAINER: Siva
   # var files variables
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   # prompt variables
   vars_prompt:
   - name: COURSE
@@ -30,3 +30,4 @@
 
 # 1 prefrence command or args line
 # 2 task level
+# 3 var-files
