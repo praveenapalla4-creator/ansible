@@ -61,9 +61,16 @@
   #   shell module -> can acess variables, pipes shel environments etc
 
 
+  # - name: grep for root
+  #   ansible.builtin.command: cat /etc/passwd | grep root
+  #   register: command_ouput # execute ayina command value ne teesukovali andte register and vaalue stores in command_output
+  # - name: print the command_output
+  #   ansible.builtin.debug:
+  #     msg: "{{ command_output }}"  # here we will get error as it is complex commands so we need to use shell module instead of command module
+
   - name: grep for root
-    ansible.builtin.command: cat /etc/passwd | grep root
-    register: command_ouput # execute ayina command value ne teesukovali andte register and vaalue stores in command_output
+    ansible.builtin.shell: cat /etc/passwd | grep root
+    register: command_ouput 
   - name: print the command_output
     ansible.builtin.debug:
-      msg: "{{ command_output }}"
+      msg: "{{ command_output }}" 
