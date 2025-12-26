@@ -2,10 +2,10 @@
   hosts: local
   connection: local 
   # play level varaibles
-  vars:
-    COURSE: DevOps
-    DURATION: 1hrs
-    TRAINER: Siva
+  # vars:
+  #   COURSE: DevOps
+  #   DURATION: 1hrs
+  #   TRAINER: Siva
   # var files variables
   # vars_files:
   # - course.yaml
@@ -27,4 +27,5 @@
 
 # 1 prefrence is task level varibales
 # 2 var files
-# 3
+# 3 Play level varaibles
+
