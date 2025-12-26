@@ -3,13 +3,13 @@
   connection: local 
   become: yes
   tasks:
-  - name: install bgins if RedHat
+  - name: install nginx if RedHat
     ansible.builtin.dnf:
       name: nginx
       state: latest
     when: ansible_os_family == "RedHat" # use ansible wheile referering the facts
   
-  - name: install bgins if RedHat
+  - name: install nginx if RedHat
     ansible.builtin.apt:
       name: nginx
       state: latest
