@@ -7,8 +7,8 @@
     DURATION: 1hrs
     TRAINER: Siva
   # var files variables
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   # prompt variables
   vars_prompt:
   - name: username
@@ -26,3 +26,5 @@
       msg: "Course Name is: {{ COURSE }}, DUration: {{ DURATION }}, Trainer: {{ TRAINER}}"
 
 # 1 prefrence is task level varibales
+# 2 var files
+# 3
