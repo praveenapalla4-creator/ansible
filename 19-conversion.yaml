@@ -49,3 +49,21 @@
   - name: check Ip adress is valid or Not 
     ansible.builtin.debug: 
        msg: "{{ Ipadress | ansible.utils.ipv4 }}"
+
+
+  # shell Vs command
+  #  remote login -> take login, execute command an dc omeout
+
+  #  or login inside the sercver and execute the command
+  #   when we dont have readymade modiules avaibale, we can execute  command or shell modele
+
+  #   command-> a simple command no need of acess to shell environment like varibales , absh , piping, etc;;
+  #   shell module -> can acess variables, pipes shel environments etc
+
+
+  - name: grep for root
+    ansible.builtin.command: cat /etc/passwd | grep root
+    register: command_ouput # execute ayina command value ne teesukovali andte register and vaalue stores in command_output
+  - name: print the command_output
+    ansible.builtin.debug:
+      msg: "{{ command_output }}"
