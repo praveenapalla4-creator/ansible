@@ -13,7 +13,7 @@
       value: consultant
     name: praveena Palla
     gmail: Info@gmail.com
-    Ipadress: "192.168.1.0" # max ipadress 255.255.255.255
+    Ipadress: 192.168.1.0 # max ipadress 255.255.255.255
 
        
   tasks:
