@@ -23,5 +23,5 @@
   
   - name: converting lsit to map
     ansible.builtin.debug:
-      msg: "tages are: {{ lsitdepart | items2dict }}"
+      msg: "tages are: {{ listdepart | items2dict }}"
 
