@@ -7,8 +7,8 @@
     TRAINER: Siva
   tasks:
   - name: print the cousre info
-  vars:
-    COURSE: Shell-Script
-  ansible.builtin.debug:  
-    msg: "Course Name is: {{ COURSE }}, DUration: {{ DURATION }}, Trainer: {{ TRAINER}}"
+    vars:
+      COURSE: Shell-Script
+    ansible.builtin.debug:  
+      msg: "Course Name is: {{ COURSE }}, DUration: {{ DURATION }}, Trainer: {{ TRAINER}}"
 
