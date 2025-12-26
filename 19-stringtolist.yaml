@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    technologies: "DevOps, AWS, Ansible, Linux"
+    technologies: DevOps, AWS, Ansible, Linux
   tasks:
   - name: converting string to list
     ansible.builtin.debug:
