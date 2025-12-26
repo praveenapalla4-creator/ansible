@@ -20,8 +20,9 @@
   tasks:
   - name: print the cousre info
     #task level variables
-    vars:
-      COURSE: Shell-Script
+    # vars:
+    #   COURSE: Shell-Script
     ansible.builtin.debug:  
       msg: "Course Name is: {{ COURSE }}, DUration: {{ DURATION }}, Trainer: {{ TRAINER}}"
 
+# 1 prefrence is task level varibales
