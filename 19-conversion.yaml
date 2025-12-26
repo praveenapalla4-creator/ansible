@@ -12,6 +12,8 @@
     - key: Associate
       value: consultant
     name: praveena Palla
+    gmail: Info@gmail.com
+    Ipadress: 353.654.725.926 # max ipadress 255.255.255.255
 
        
   tasks:
@@ -41,3 +43,8 @@
   - name: convert to upper case
     ansible.builtin.debug:
       msg: "{{name | upper}}"
+  - name: convert to lower case
+    ansible.builtin.debug:
+      msg: "{{name | lower}}"
+  - name: check Ip adress is valid or Not 
+    ansible.builtin.debug: "{{ Ipadress | ansible.utils.ipv4 }}""
