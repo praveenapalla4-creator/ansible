@@ -1,0 +1,12 @@
+- name: install ocakages
+  hosts: local
+  connection: local
+  tasks:
+  - name: print names
+    ansible.builtin.pacakage:
+      name: "{{ item }}"
+      state: latest
+    loop:
+    - nginx
+    - mysql
+    - zip
