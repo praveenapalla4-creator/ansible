@@ -11,6 +11,7 @@
       value: Analayst
     - key: Associate
       value: consultant
+    name: praveena Palla
 
        
   tasks:
@@ -37,3 +38,6 @@
     ansible.builtin.copy:
       dest: ./student-data.json
       content: "{{ student_yaml | to_nice_json}}"
+  - name: convert to upper case
+    ansible.builtin.debug:
+      msg: "{{name | upper}}"
