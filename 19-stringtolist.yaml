@@ -6,5 +6,5 @@
   tasks:
   - name: converting string to list
     ansible.builtin.debug:
-     msg: "{{technologies | split(',')}}"
+     msg: "Technologies are : {{technologies | split(',') }}"
 
