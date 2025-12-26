@@ -77,12 +77,12 @@
       msg: "{{ command_ouput }}" 
 
   ## redirections
-  - name: redirect the command_output
-    ansible.builtin.command: ls -ltr > /tmp/output.txt
-    register: redirect_output
-  - name: print the redirect_output
-    ansible.builtin.debug:
-      msg: "{{ redirect_output }}" ## fails as these complext command we need to perform all these inside the shell 
+  # - name: redirect the command_output
+  #   ansible.builtin.command: ls -ltr > /tmp/output.txt
+  #   register: redirect_output
+  # - name: print the redirect_output
+  #   ansible.builtin.debug:
+  #     msg: "{{ redirect_output }}" ## fails as these complext command we need to perform all these inside the shell 
 
   - name: redirect the command_output
     ansible.builtin.command: ls -ltr 
