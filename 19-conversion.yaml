@@ -47,4 +47,5 @@
     ansible.builtin.debug:
       msg: "{{name | lower}}"
   - name: check Ip adress is valid or Not 
-    ansible.builtin.debug: "{{ Ipadress | ansible.utils.ipv4 }}"
+    ansible.builtin.debug: 
+       msg: "{{ Ipadress | ansible.utils.ipv4 }}"
